@@ -1,4 +1,4 @@
-# Spring Boot MongoDB CRUD example - Restful CRUD API
+# Spring Boot MongoDB CRUD for Social Media Blogging
 
 API Development:
 I have used React js for the Front End and Spring Boot for the Back end development.
