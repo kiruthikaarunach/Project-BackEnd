@@ -1,58 +1,38 @@
 # Spring Boot MongoDB CRUD example - Restful CRUD API
 
-For more detail, please visit:
-> [Spring Boot with MongoDB CRUD example using Spring Data](https://www.bezkoder.com/spring-boot-mongodb-crud/)
+API Development:
+I have used React js for the Front End and Spring Boot for the Back end development.
+Below are the list of all the  APIs developed-
+URL – localhost:3000:/api/auth
+1.User Registration and Authentication-
+POST-
+/signin – to Login to application 
+/signup – to register to application
 
-More Practice:
-> [Spring Boot Reactive + MongoDB example](https://www.bezkoder.com/spring-boot-mongodb-reactive/)
+2.CRUD on the BlogPosts-
+1.GET
+/blogposts – to fetch all the blogposts
+/blogposts/{id} – to get blogpostbyid
+/comments – to fetch all the comments
+/comments/{id} – to get commentbyid
 
-> [Spring Boot MongoDB Pagination & Filter example](https://www.bezkoder.com/spring-boot-mongodb-pagination/)
+2.PUT
+/blogposts/{title}  - to update blogpost by title
+/comments/{name}-  to update comment by name
 
-> [Spring Boot + GraphQL + MongoDB example](https://www.bezkoder.com/spring-boot-graphql-mongodb-example-graphql-java/)
+3.POST  - 
+/blogposts – to create a blogpost
+/comments – to create a comment
 
-> [Spring Boot File upload example with Multipart File](https://www.bezkoder.com/spring-boot-file-upload/)
+4.DELETE
+/blogposts/{title}  - to delete blogpost by title
+/blogposts – to delete all blogposts
+/comments/{name}-  to delete comment by name
+/comments – to delete all comments
 
-> [Spring Boot Rest Controller Unit Test with @WebMvcTest](https://www.bezkoder.com/spring-boot-webmvctest/)
+3.List all blogposts filtered by title category and all comments filtered by name category
+/comments – to filterbynamecontating the comment
+/blogposts- to filterbytitlecontaining the blogpost
 
-> Cache the result: [Spring Boot Redis Cache example](https://www.bezkoder.com/spring-boot-redis-cache-example/)
-
-> Documentation: [Spring Boot with Swagger 3 example](https://www.bezkoder.com/spring-boot-swagger-3/)
-
-Exception Handling:
-> [Spring Boot @ControllerAdvice & @ExceptionHandler example](https://www.bezkoder.com/spring-boot-controlleradvice-exceptionhandler/)
-
-> [@RestControllerAdvice example in Spring Boot](https://www.bezkoder.com/spring-boot-restcontrolleradvice/)
-
-Security:
-> [Spring Boot: JWT Authentication & Authorization with MongoDB](https://www.bezkoder.com/spring-boot-jwt-auth-mongodb/)
-
-Fullstack:
-> [Angular 8 + Spring Boot + MongoDB](https://www.bezkoder.com/angular-spring-boot-mongodb/)
-
-> [Angular 10 + Spring Boot + MongoDB](https://www.bezkoder.com/angular-10-spring-boot-mongodb/)
-
-> [Angular 11 + Spring Boot + MongoDB](https://www.bezkoder.com/angular-11-spring-boot-mongodb/)
-
-> [Angular 12 + Spring Boot + MongoDB example](https://www.bezkoder.com/angular-12-spring-boot-mongodb/)
-
-> [Angular 13 + Spring Boot + MongoDB example](https://www.bezkoder.com/angular-13-spring-boot-mongodb/)
-
-> [Angular 14 + Spring Boot + MongoDB example](https://www.bezkoder.com/spring-boot-angular-14-mongodb/)
-
-> [Angular 15 + Spring Boot + MongoDB example](https://www.bezkoder.com/spring-boot-angular-15-mongodb/)
-
-> [Vue + Spring Boot + MongoDB](https://www.bezkoder.com/spring-boot-vue-mongodb/)
-
-> [React + Spring Boot + MongoDB](https://www.bezkoder.com/react-spring-boot-mongodb/)
-
-Run both Back-end & Front-end in one place:
-> [Integrate Angular with Spring Boot Rest API](https://www.bezkoder.com/integrate-angular-spring-boot/)
-
-> [Integrate React.js with Spring Boot Rest API](https://www.bezkoder.com/integrate-reactjs-spring-boot/)
-
-> [Integrate Vue.js with Spring Boot Rest API](https://www.bezkoder.com/integrate-vue-spring-boot/)
-
-## Run Spring Boot application
-```
-mvn spring-boot:run
-```
+Script for Data Population-
+I have used Junit for Datapopulation and this can be run multiple times to populate data as per the requirement. This can perform all the CRUD operations by calling the corresponding  BlogPost and Comment Controller.
